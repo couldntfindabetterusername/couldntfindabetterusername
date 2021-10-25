@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+}
+
+.circle {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(119.56deg, #de37fa 14.53%, #0ff1c8 94.09%);
+  bottom: 5%;
+  left: 40%;
+}
+
+.square {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  background: linear-gradient(132.85deg, #c5f73a 13.32%, #1ab700 86.68%);
+  top: 5%;
+  left: 8%;
+}
+.triangle {
+  position: absolute;
+  overflow: hidden;
+  width: 400px;
+  height: 200px;
+  background: linear-gradient(190.31deg, #ffb774 10.91%, #fff967 75.61%);
+  right: 0;
+  top: 25%;
+  clip-path: polygon(0 50%, 100% 0, 100% 100%);
+}
+
+main {
+  width: 80%;
+  height: 80%;
+  position: relative;
+
+  border-radius: 100px;
+  z-index: 1;
+  background: linear-gradient(
+    105.63deg,
+    rgba(255, 255, 255, 0.3) 7.49%,
+    rgba(255, 255, 255, 0.1) 99.06%
+  );
+  backdrop-filter: blur(30px);
+  border-radius: 100px;
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  border-left: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.header-content {
+  justify-content: space-between;
+}
+
+.profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid rgba(0, 0, 0, 0.15);
+}
+
+img {
+  width: 180px;
+  height: 180px;
+  border-radius: inherit;
+}
+
+.header-content h1 {
+  font-family: "Lato", "Arial", serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  margin: 20px 0;
+  text-align: center;
+}
+
+.header-content h1 span {
+  color: #303030;
+}
+
+@media screen and (max-width: 800px) {
+  .circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .square {
+    width: 150px;
+    height: 150px;
+  }
+
+  .triangle {
+    width: 320px;
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .circle {
+    width: 160px;
+    height: 160px;
+    left: 30%;
+  }
+
+  .square {
+    width: 120px;
+    height: 120px;
+    left: 12%;
+  }
+
+  .triangle {
+    width: 240px;
+    height: 120px;
+    top: 35%;
+  }
+
+  main {
+    width: 90%;
+    border-radius: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .square {
+    width: 80px;
+    height: 80px;
+  }
+
+  .triangle {
+    width: 120px;
+    height: 60px;
+  }
+}
