@@ -26,4 +26,5 @@ Social Links:
 <hr>
 
 [![Contribution Stats](https://github-contribution-stats.vercel.app/api/?username=couldntfindabetterusername)](https://github.com/LordDashMe/github-contribution-stats/)<br>
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=couldntfindabetterusername)](https://git.io/streak-stats)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=couldntfindabetterusername)](https://git.io/streak-stats)<br>
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=couldntfindabetterusername)](https://github.com/anuraghazra/github-readme-stats)
