@@ -14,6 +14,9 @@ Social Links:
 <a href="https://www.behance.net/sujalbarsaiyan">
   <img align="center" alt="Behance" width="24px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/behance.svg"/>
 </a>&nbsp;
+<a href="https://codepen.io/couldntfindabetterusername">
+  <img align="center" alt="Codepen" width="24px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/codepen.svg"/>
+</a>&nbsp;
 <a href="https://www.instagram.net/bettercallsujal">
   <img align="center" alt="Behance" width="24px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg"/>
 </a>
