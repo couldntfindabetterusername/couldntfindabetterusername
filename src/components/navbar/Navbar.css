@@ -18,14 +18,16 @@ nav {
 }
 .logo-wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row-reverse;
   align-items: center;
 }
 .logo {
   width: 60px;
   height: 60px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.8s ease-in-out;
   transform: translate(0, 0);
+  position: absolute;
+  left: 40px;
 }
 .logo-home {
   width: 200px;
@@ -34,7 +36,7 @@ nav {
   top: 100%;
   left: 50%;
   transform: translate(-50%, 50%);
-  transition: all 0.3s linear;
+  transition: all 0.8s linear;
 }
 .hamburger-menu-wrapper {
   width: 30px;
