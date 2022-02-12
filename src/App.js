@@ -1,11 +1,6 @@
 import Navbar from "./components/navbar/Navbar";
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Education from "./pages/education/Education";
 import Skills from "./pages/skills/Skills";
@@ -16,18 +11,15 @@ function App() {
     <Router>
       <Navbar />
 
-      <Routes>
-        <Route path="/" exact element={<Home />}></Route>
-        <Route path="/education" exact element={<Education />}></Route>
-        {/* <Route path="/skills" exact>
-          <Skills></Skills>
-        </Route>
-        <Route path="/work" exact>
-          <Work></Work>
-        </Route> */}
-
-        <Navigate to="/" />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="*" element={<Home />} />
+          <Route path="/" exact element={<Home />} />
+          <Route path="/education" exact element={<Education />} />
+          <Route path="/skills" exact element={<Skills />} />
+          <Route path="/work" exact element={<Work />} />
+        </Routes>
+      </main>
     </Router>
   );
 }
