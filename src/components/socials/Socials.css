@@ -1,0 +1,137 @@
+aside {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  transition: aside 1s ease 1;
+}
+span {
+  font-size: 18px;
+  color: #006261;
+  transition: spanBack 1s ease 1;
+}
+section {
+  display: grid;
+  width: fit-content;
+  grid-gap: 25px;
+  margin-top: 10px;
+  height: fit-content;
+  transition: section 1s ease 1;
+}
+img {
+  min-width: 36px;
+  min-height: 36px;
+  max-width: 36px;
+  max-height: 36px;
+  border-radius: 50%;
+  transition: img 1s ease 1;
+}
+
+.aside-aside {
+  right: 30px;
+  left: unset;
+  transition: asideBack 1s ease 1;
+}
+.span-aside {
+  display: none;
+  transition: spanBack 1s ease 1;
+}
+.section-aside {
+  margin-top: unset;
+  grid-gap: 15px;
+  transition: sectionBack 1s ease 1;
+}
+.img-aside {
+  min-width: 28px;
+  min-height: 28px;
+  max-width: 28px;
+  max-height: 28px;
+  transition: imgBack 1s ease 1;
+}
+
+@keyframes aside {
+  0% {
+    left: 30px;
+    right: unset;
+  }
+  100% {
+    left: unset;
+    right: 30px;
+  }
+}
+@keyframes asideBack {
+  0% {
+    left: unset;
+    right: 30px;
+  }
+  100% {
+    left: 30px;
+    right: unset;
+  }
+}
+
+@keyframes span {
+  0% {
+    display: contents;
+  }
+  100% {
+    display: none;
+  }
+}
+@keyframes spanBack {
+  100% {
+    display: contents;
+  }
+  0% {
+    display: none;
+  }
+}
+
+@keyframes section {
+  0% {
+    grid-gap: 25px;
+    margin-top: 10px;
+  }
+  100% {
+    margin-top: unset;
+    grid-gap: 15px;
+  }
+}
+@keyframes sectionBack {
+  100% {
+    grid-gap: 25px;
+    margin-top: 10px;
+  }
+  0% {
+    margin-top: unset;
+    grid-gap: 15px;
+  }
+}
+
+@keyframes img {
+  0% {
+    min-width: 36px;
+    min-height: 36px;
+    max-width: 36px;
+    max-height: 36px;
+  }
+  100% {
+    min-width: 28px;
+    min-height: 28px;
+    max-width: 28px;
+    max-height: 28px;
+  }
+}
+@keyframes imgBack {
+  100% {
+    min-width: 36px;
+    min-height: 36px;
+    max-width: 36px;
+    max-height: 36px;
+  }
+  0% {
+    min-width: 28px;
+    min-height: 28px;
+    max-width: 28px;
+    max-height: 28px;
+  }
+}
