@@ -12,37 +12,6 @@ function Navbar() {
     <>
       <nav className="navbar-container">
         <div className="navbar-wrapper">
-          <div className={hamburger ? "nav-links nav-links-open" : "nav-links"}>
-            <NavLink
-              to="/"
-              className="nav-link"
-              onClick={() => setHamburger(!hamburger)}
-            >
-              Home
-            </NavLink>
-            <NavLink
-              to="/education"
-              className="nav-link"
-              onClick={() => setHamburger(!hamburger)}
-            >
-              Education
-            </NavLink>
-            <NavLink
-              to="/skills"
-              className="nav-link"
-              onClick={() => setHamburger(!hamburger)}
-            >
-              Skills
-            </NavLink>
-            <NavLink
-              to="/work"
-              className="nav-link"
-              onClick={() => setHamburger(!hamburger)}
-            >
-              Work
-            </NavLink>
-          </div>
-
           <div className="logo-wrapper">
             <div
               className={url.pathname === "/" ? "logo logo-home" : "logo"}
@@ -80,6 +49,37 @@ function Navbar() {
                 }
               />
             </div>
+          </div>
+
+          <div className={hamburger ? "nav-links nav-links-open" : "nav-links"}>
+            <NavLink
+              to="/"
+              className="nav-link"
+              onClick={() => setHamburger(!hamburger)}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="/education"
+              className="nav-link"
+              onClick={() => setHamburger(!hamburger)}
+            >
+              Education
+            </NavLink>
+            <NavLink
+              to="/skills"
+              className="nav-link"
+              onClick={() => setHamburger(!hamburger)}
+            >
+              Skills
+            </NavLink>
+            <NavLink
+              to="/work"
+              className="nav-link"
+              onClick={() => setHamburger(!hamburger)}
+            >
+              Work
+            </NavLink>
           </div>
         </div>
       </nav>
